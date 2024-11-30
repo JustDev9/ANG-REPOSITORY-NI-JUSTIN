@@ -44,12 +44,11 @@ box-shadow: 0 rem 3rem rgba(132,139,200,0.18);
       }
 
 body {
-    background: url(bg.png) ;
+    /* background: ; */
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
     font-size: 0.88rem;
-    background-color: rgb(160, 173, 237);
     user-select: none; 
     overflow-x:hidden;  
     color: #363949;
@@ -58,7 +57,7 @@ body {
 .container{
     display: grid;
     width: 96%;
-    margin: 0 auto;
+    margin:;
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
@@ -103,16 +102,18 @@ b{
 
 aside{
     height: 100vh;
-    background: rgb(239, 239, 239);
+    background: rgb(220, 43, 43);
+    
+    
     
 }
 
 aside .top{
-    background: white ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.4rem;
+    margin-left:2rem ;
 }
 
 /* aside .logo img {
@@ -121,8 +122,10 @@ aside .top{
  
 
 aside .logo {
-    display: flex;
+    display:flex;
     gap:0.8rem;
+    position: relative;
+   
 }
  aside .logo img {
     width: 2rem;
@@ -143,6 +146,7 @@ aside .logo {
     height: 86vh;
     position: relative;
     top: 3rem;
+
 
  }
 
@@ -212,12 +216,12 @@ main{
 
 
 main .dash-text{
-    color: white;
+    color: black;
 }
 
 main .date{
     display: inline-block;
-    background:  rgba(237, 237, 237, 0.18);
+    background: rgba(148, 129, 129, 0.18);
     border-radius:  0.4rem;
     margin-top: 1rem;
     padding: 0.5rem 1.6rem;
@@ -225,7 +229,7 @@ main .date{
 
 main .date input[type="date"]{
     background: transparent; 
-    color: #f6f6f6;
+    color: #b69393;
 }
 
 main .insights {
@@ -240,7 +244,7 @@ main .insights > div {
     padding: 0.3rem;
     border-radius: 2rem ;
     margin-top: 1rem;
-    box-shadow: 1rem 1rem rgba(132,139,200,0.18);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: all 300ms ease;
 }
 
@@ -328,15 +332,15 @@ main .insights small{
 
 /* ======================Inventory========== */
  
-main .Recent-order{
+main .recent-orders{
     margin-top: 2rem;
 }
 
-main .Recent-order  h2 {
+main .recent-orders  h2 {
     margin-bottom: 0.8rem;
 }
 
-main .Recent-order table{
+main .recent-orders table{
     background-color: white;
     width: 100%;
     border-radius: 2rem;
@@ -347,7 +351,7 @@ main .Recent-order table{
 }
 
 
-main .Recent-order table:hover{
+main .recent-orders table:hover{
     box-shadow: none;
 }
 
@@ -355,5 +359,249 @@ main table tbody td{
     height: 2.8rem ;
     border-bottom: 1px solid grey;
     color: #677483;
+}
 
+main table tbody tr:last-child{
+    border: none
+}
+
+main .recent-orders a{
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: #7380ec ;
+}
+
+.warning{
+    color: Red ;
+}
+
+.primary{ 
+    color: #7380ec;
+}
+
+/* PROFILE PICS  */
+.profile-photo img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+/* RIGHT SIDE  */
+ .right{
+    margin-top: 1.4rem;
+ }
+
+ .right .top{
+    display: flex; 
+    justify-content: end;
+    gap: 2rem;
+    /* background-color; */
+ }
+
+ .right .top button{
+    display: none;
+ }
+ 
+ 
+ .right .top .profile{
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+ }
+
+ /* RECENT UPDATES */
+
+ 
+
+ .right .recent-updates{
+    margin-top: 1rem;
+ }
+
+ .right .recent-update h2{
+    margin-bottom: 0.8rem;
+ }
+
+ .right .recent-updates .updates{
+    background: white;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    box-shadow: rgba(61, 61, 235, 0.2) 0px 7px 29px 0px;
+    transition: all 300ms ease;
+ }
+
+ .right .recent-updates .updates:hover{
+    box-shadow: none;
+ }
+
+ .right .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+ }
+/* =================Media Queries ======================= */
+@media screen and (max-width: 1200px) {
+
+    .container{
+        width: 94%;
+        grid-template-columns: 7rem auto 23rem;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    aside .sidebar a {
+        width: 5.6rem;
+    }
+
+    aside .sidebar a:last-child{
+        position: relative;
+        margin-top: 1.8rem;
+    }
+
+    main .insights{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    main .recent-orders{
+        width:94%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 2rem 0 0 8.8rem;
+    }
+
+    main .recent-orders table{
+        width: 84vw;
+    }
+
+    main table thead tr th:last-child,
+    main table thead tr th:first-child {
+    display: none;
+
+    }
+
+    main table tbody tr td:last-child,
+    main table tbody tr td:first-child {
+    display: none;
+}
+
+/* mobile */
+
+@media screen  and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+
+    }
+    aside{
+        position:fixed;
+        left:-100;
+        background: white;
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem white;
+        height: 100vh;
+        padding-right: 1.8rem;
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+@keyframes showMenu {
+    to {
+        left: 0;
+    }
+}
+
+    aside .logo {
+        margin-left: 1rem;   
+    }
+
+    aside .logo h2{
+        display: inline;
+    }
+    aside .sidebar  h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+
+    aside .sidebar a:last-child{
+       position: absolute;
+       bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+    main {
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    main .recent-orders{
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+    }
+
+    main .recent-orders table{ 
+        width: 100%;
+        margin: 0;
+    }
+
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0; 
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: rgb(215, 197, 197);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow:  0 1rem 1rem rgb(200, 196, 196);
+    }
+
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .profile .info{
+        display: none;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: rgb(9, 5, 5);
+        position: absolute;
+        left: 1rem;
+    }
+
+    .right .top button span {
+        font-size: 2rem;
+
+    }
+}
 }
