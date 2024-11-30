@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp "
-    rel="stylesheet">    <!-- style sheet eme -->
+    rel="stylesheet">  
+      <!-- style sheet eme -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <div class="container">
         <aside>
             <div class="top">
@@ -22,12 +22,12 @@
             </div>
 
             <div class="sidebar">
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashbord</h3>
                 </a>
 
-                <a href="#" class="active">
+                <a href="#">
                     <span class="material-icons-sharp">inventory</span>
                     <h3>Inventory</h3>
                 </a>
@@ -47,7 +47,7 @@
                     <h3>Help Support</h3>
                 </a>                
 
-                <a href="#" >
+                <a href="#">
                     <span class="material-icons-sharp">logout</span>
                     <h3>Logout</h3>
                 </a>
@@ -130,7 +130,7 @@
 
 </div>
     <!--   INVENTORY TRACKER  -->
-    <div class="Recent-order">
+    <div class="recent-orders">
         <h2> Inventory</h2>
         <table>
             <thead>
@@ -150,7 +150,6 @@
                 <td>Writing Supply</td>
                 <td>11</td>
                 <td class="warning">Low</td>
-                <td class="primary">Details</td>
             </tr>
             <tr>
                 <td>101</td>
@@ -158,7 +157,6 @@
                 <td>Writing Supply</td>
                 <td>11</td>
                 <td class="warning">Low</td>
-                <td class="primary">Details</td>
             </tr>
             <tr>
                 <td>101</td>
@@ -166,7 +164,6 @@
                 <td>Writing Supply</td>
                 <td>11</td>
                 <td class="warning">Low</td>
-                <td class="primary">Details</td>
             </tr>
             <tr>
                 <td>101</td>
@@ -174,7 +171,6 @@
                 <td>Writing Supply</td>
                 <td>11</td>
                 <td class="warning">Low</td>
-                <td class="primary">Details</td>
             </tr>
             <tr>
                 <td>101</td>
@@ -182,15 +178,71 @@
                 <td>Writing Supply</td>
                 <td>11</td>
                 <td class="warning">Low</td>
-                <td class="primary">Details</td>
             </tr>
         </tbody>
      </table>
      <a href="#"> Show All</a>
     </div>
     </main>
+    <!-- END OF MAIN -->
+    <!-- Profile on top  -->
 
+    <div class = "right">
+        <div class= "top">
+            <button id ="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </button>
+            
+            <div class="profile">
+                <div class="info">
+                    <p>Hey, <b> Cap</b></p>
+                    <small class="text-muted"> Admin</small>
+                </div>
+                <div class="profile-photo">
+                    <img src="/img/cap.jpg" alt="Profile">
+                </div>
+            </div>
+        </div>
 
+        <!-- End of top -->
+         <!-- tracker  -->
+
+         <div class="recent-updates">
+            <h2> Recent Updates</h2>
+            <div class="updates">
+                <div class="update">
+                        <div class="profile-photo">
+                            <img src="/img/queen lengleng.jpg" alt="Profile">
+                        </div>
+                        <div class="message">
+                            <p><b>Queen Lengleng</b> added 20 new products to the inventory</p>
+                            <small class="text-muted">Today, 12:15 PM</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/img/queen yasmin.jpg" alt="Profile">
+                        </div>
+                        <div class="message">
+                            <p><b>Queen Yasmin</b> added 20 new products to the inventory></p>
+                            <small class="text-muted">Today, 12:15 PM</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="/img/vicce.jpg" alt="Profile">
+                        </div>
+                        <div class="message">
+                            <p><b>Vice Ganda</b> added 20 new products to the inventory</p>
+                            <small class="text-muted">Today, 12:15 PM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Recent  -->
+
+    <script src="./order.js"></script>
+    <script src="./index.js"></script>
 
 </body>
 </html> 
