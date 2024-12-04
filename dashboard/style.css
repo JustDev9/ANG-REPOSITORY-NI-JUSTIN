@@ -461,8 +461,8 @@ main .recent-orders a{
     }
 
     aside .sidebar a:last-child{
-        position: relative;
-        margin-top: 1.8rem;
+        position: absolute;
+        bottom: 5rem;
     }
 
     main .insights{
@@ -501,17 +501,19 @@ main .recent-orders a{
         grid-template-columns: 1fr;
 
     }
-    aside{
-        position:fixed;
-        left:-100;
-        background: white;
+    aside {
+        position: fixed;
+        left: 0;
+        top: 0;
         width: 18rem;
-        z-index: 3;
-        box-shadow: 1rem 3rem 4rem white;
         height: 100vh;
-        padding-right: 1.8rem;
-        display: none;
-        animation: showMenu 400ms ease forwards;
+        background: white;
+        transform: translateX(-100%); /* Hide by default */
+        z-index: 3;
+    }
+    
+    aside.show {
+        transform: translateX(0); /* Slide into view */
     }
 
 @keyframes showMenu {
