@@ -44,7 +44,10 @@ box-shadow: 0 rem 3rem rgba(132,139,200,0.18);
       }
 
 body {
-    /* background: ; */
+    background: url(img/bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     font-family: poppins, sans-serif;
@@ -57,13 +60,12 @@ body {
 .container{
     display: grid;
     width: 96%;
-    margin:;
-    gap: 1.8rem;
+    gap:3vh;
     grid-template-columns: 14rem auto 23rem;
 }
 
 a{
-    color: #363636;
+    color: #212640;
 }
 
 img {
@@ -85,7 +87,7 @@ h3{
 }
 
 .text-muted{
-    color: #7d8da1;
+    color: #212640;
 }
 
 h4{
@@ -93,7 +95,7 @@ h4{
 }
 
 p{
-    color: #677483;
+    color: #212640;
 }
 
 b{
@@ -101,19 +103,18 @@ b{
 }
 
 aside{
+    position: fixed;
     height: 100vh;
-    background: rgb(220, 43, 43);
-    
-    
-    
+    background: rgba(250, 240, 540, 0.3);
+    backdrop-filter: blur(20px);
 }
 
 aside .top{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 1.4rem;
-    margin-left:2rem ;
+    
 }
 
 /* aside .logo img {
@@ -140,14 +141,12 @@ aside .logo {
 
  aside .sidebar{
     /* background-color: white; */
-    background:white;
+    background: rgba(250, 240, 540, 0.3);    
     display: flex;
     flex-direction: column; 
     height: 86vh;
     position: relative;
-    top: 3rem;
-
-
+    top: 2rem;
  }
 
  aside h3 {
@@ -157,7 +156,7 @@ aside .logo {
 
  aside .sidebar a {
     display: flex;
-    color: #677483;
+    color: #212640;
     margin-left: 2rem;
     gap: 1rem;
     align-items: center;
@@ -184,8 +183,8 @@ aside .sidebar a:last-child{
 }
 
 aside .sidebar a.active {
-    background: aqua;
-    color: blue;
+    background: rgb(193, 197, 247);
+    color: #0B2F9F;
     margin-left: 0;
 }
 
@@ -193,7 +192,7 @@ aside .sidebar a.active:before{
     content: '';
     width: 6px; 
     height: 100%;
-    background: blue;
+    background: #6599d8;
 }
 
 aside .sidebar a.active span{
