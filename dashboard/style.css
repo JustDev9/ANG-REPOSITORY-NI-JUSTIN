@@ -103,7 +103,7 @@ b{
 }
 
 aside{
-    position: fixed;
+    position: relative;
     height: 100vh;
     background: rgba(250, 240, 540, 0.3);
     backdrop-filter: blur(20px);
