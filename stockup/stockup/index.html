@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp "
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+      <!-- style sheet eme -->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png" alt=logo">
+                    <h2 class="stock_up">Stock Up</h2>
+                </div>
+                 <div class = "close" id = "close-btn">
+                    <span class="material-icons-sharp">close</span>
+                 </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashbord</h3>
+                </a>
+
+                <a href="inventory.html">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Inventory</h3>
+                </a>
+
+                <a href="stockreport.html" >
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <h3>Stock Report</h3>
+                </a>
+
+                <a href="logintracker.html" >
+                    <span class="material-icons-sharp">track_changes</span>
+                    <h3>Login Tracker</h3>
+                </a>
+
+                <a href="help.html" >
+                    <span class="material-icons-sharp">help</span>
+                    <h3>Help Support</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!--_----------------- OA END OF NAV BAR -------------------------- -->
+    <main>
+          <h1 class="dash-text">Dashboard</h1>
+           <div class="date">
+             <input type="date">
+           </div>
+
+           <div class="insights">
+            <div class="sales">
+                  <span class="material-icons-sharp"> analytics </span>
+                <div class="middle">
+                    <div class="left">
+                        <h3>Total Stocks</h3>
+                        <h2>800 stocks</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- end of ka emehan sales track -->
+
+            <!-- start of income  -->
+            <div class="expenses">
+                <span class="material-icons">trending_up</span>
+              <div class="middle">
+                  <div class="left">
+                      <h3>Total High Stocks</h3>
+                      <h2>400 stocks</h2>
+                  </div>
+              </div>
+
+          </div>
+
+          <!-- 2nd card total stocks -->
+
+          <div class="income">
+            <span class="material-icons"> trending_down</span>
+          <div class="middle">
+              <div class="left">
+                  <h3>Total Low Stock</h3>
+                  <h2>400 stocks </h2>
+              </div>
+          </div>
+      </div>
+
+      <!-- 3nd card INCOME  -->
+</div>
+    <!--   INVENTORY TRACKER  -->
+    <div class="recent-orders">
+        <h2> Inventory</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Id</th>
+                    <th>Product</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                    <th>Status</th>
+                <tr></tr>
+            </tr>
+         </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>Pencil</td>
+                <td>Writing Supply</td>
+                <td>11</td>
+                <td class="warning">Low</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Pencil</td>
+                <td>Writing Supply</td>
+                <td>11</td>
+                <td class="warning">Low</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Pencil</td>
+                <td>Writing Supply</td>
+                <td>11</td>
+                <td class="warning">Low</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Pencil</td>
+                <td>Writing Supply</td>
+                <td>11</td>
+                <td class="warning">Low</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Pencil</td>
+                <td>Writing Supply</td>
+                <td>11</td>
+                <td class="warning">Low</td>
+            </tr>
+        </tbody>
+     </table>
+     <a href="#"> Show All</a>
+    </div>
+    <div class = "right">
+        <div class= "top">
+            <button id ="menu-btn">
+                <span class="material-icons-sharp">menu</span>
+            </button>
+        </div>
+    </div>
+        <!-- End of top -->
+         <!-- tracker  -->
+         <div class="tracker">
+        <h2> Login tracker</h2>
+        <table>
+                 <thead>
+                   <tr>
+                     <th>Staff ID</th>
+                     <th>Name</th>
+                     <th>Time In</th>
+                     <th>Time Out</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                       <td>001</td>
+                       <td>Janico Sorio</td>
+                       <td>November 23, 2024 08:00 AM</td>
+                       <td>November 23, 2024 04:30 PM</td>
+                   </tr>
+                   <tr>
+                       <td>002</td>
+                       <td>Catherine Mon</td>
+                       <td>November 23, 2024 08:15 AM</td>
+                       <td>November 23, 2024 05:00 PM</td>
+                   </tr>
+                   <tr>
+                       <td>003</td>
+                       <td>Justin Del Rosario</td>
+                       <td>November 23, 2024 09:00 AM</td>
+                       <td>November 23, 2024 06:00 PM</td>
+                   </tr>
+                   <tr>
+                       <td>004</td>
+                       <td>Kent Ann Ecal</td>
+                       <td>November 23, 2024 08:30 AM</td>
+                       <td>November 23, 2024 05:15 PM</td>
+                   </tr>
+                   <tr>
+                       <td>005</td>
+                       <td>Johannes De Jesus</td>
+                       <td>November 23, 2024 08:30 AM</td>
+                       <td>November 23, 2024 05:15 PM</td>
+                   </tr>
+               </tbody>
+               </table>
+     <a href="#"> Show All</a>
+
+
+
+    </div>
+    </main>
+    <!-- END OF MAIN -->
+    <!-- Profile on top  -->
+
+</div>
+            <!-- End Recent  -->
+
+
+    <script src="./order.js"></script>
+    <script>
+const sideMenu = document.querySelector("aside");
+const menuBtn = document.querySelector("#menu-btn");
+const closeBtn = document.querySelector("#close-btn");
+
+menuBtn.addEventListener("click", () => {
+    sideMenu.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+    sideMenu.classList.remove("show");
+});
+    </script>
+
+</body>
+
+
+
+</html>
